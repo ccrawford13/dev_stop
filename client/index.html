@@ -1,0 +1,12 @@
+<head>
+  <base href="/">
+</head>
+<body ng-app="devStop" layout="row">
+  <div ng-include="'client/components/views/side-nav.ng.html'"></div>
+  <div layout="column" tabindex="-1" role="main" flex>
+    <div ng-include="'client/components/views/toolbar.ng.html'"></div>
+    <md-content>
+      <div ui-view></div>
+    </md-content>
+  </div>
+</body>

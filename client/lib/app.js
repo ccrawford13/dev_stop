@@ -1,4 +1,6 @@
-angular.module('devStop', ['angular-meteor', 'ui.router', 'ngMaterial'])
+angular.module('devStop', ['angular-meteor', 'ui.router', 'ngMaterial',
+    'ui.router.title'
+  ])
   .config(function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
       .primaryPalette('blue', {
