@@ -7,7 +7,7 @@ angular.module('devStop')
       $stateProvider
         .state('welcome', {
           url: '/',
-          templateUrl: 'client/welcome/welcome.ng.html',
+          templateUrl: 'client/angular/welcome/welcome.ng.html',
           controller: 'WelcomeController',
           resolve: {
             $title: function() {
@@ -17,7 +17,7 @@ angular.module('devStop')
         })
         .state('explore', {
           url: '/explore',
-          templateUrl: 'client/explore/views/explore.ng.html',
+          templateUrl: 'client/angular/explore/views/explore.ng.html',
           controller: 'ExploreController',
           resolve: {
             $title: function() {
