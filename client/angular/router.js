@@ -31,7 +31,7 @@ angular.module('devStop')
           controller: 'TechListController',
           resolve: {
             $title: function() {
-              return 'Technology List'
+              return 'All Technologies'
             }
           }
         })

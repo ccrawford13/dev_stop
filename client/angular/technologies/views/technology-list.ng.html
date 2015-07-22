@@ -1,0 +1,11 @@
+<div ng-controller="TechListController">
+  <md-list>
+    <md-list-item class="md-1-line" ng-repeat="tech in technologies">
+      <h3>
+        <a href="/technologies/{{ tech._id }}">
+          {{ tech.name }}
+        </a>
+      </h3>
+    </md-list-item>
+  </md-list>
+</div>
