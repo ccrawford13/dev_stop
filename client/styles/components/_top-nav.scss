@@ -1,0 +1,13 @@
+.top__nav {
+  background-color: $light-gray;
+  z-index: 9999;
+
+  h1 {
+    color: black;
+    font-weight: bold;
+  }
+
+  .md-button {
+    color: $primary-color;
+  }
+}

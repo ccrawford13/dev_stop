@@ -1,0 +1,25 @@
+md-sidenav,
+md-sidenav.md-locked-open,
+md-sidenav.md-closed.md-locked-open-add-active {
+    min-width: 200px !important;
+    width: 85vw !important;
+    max-width: 250px !important;
+}
+
+.side-nav__container {
+  background-color: $primary-color;
+  text-align: center;
+
+  .md-display-3 {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .md-button {
+    width: 75%;
+  }
+  a {
+    color: #fff;
+  }
+}

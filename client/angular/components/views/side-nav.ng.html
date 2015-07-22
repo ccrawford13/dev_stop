@@ -1,18 +1,16 @@
-<md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2">
-  <md-content layout-padding class="side-nav__container">
+<md-sidenav layout="column" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" class="md-whiteframe-z2 site__side-nav" flex>
+  <md-content flex content-padding class="side-nav__container">
     <h1 class="md-display-3">
       <a href="/">devStop</a>
     </h1>
     <h3>
-      <a href="/technologies">Technologies</a>
+      <md-button href="/technologies">Technologies</md-button>
     </h3>
     <div ng-controller="TechListController">
       <div ng-repeat="tech in technologies">
-        <h4 class="md-title">
-          <a href="/technologies/{{ tech._id }}">
-            {{ tech.name }}
-          </a>
-        </h4>
+        <md-button href="/technologies/{{ tech._id }}">
+          {{ tech.name }}
+        </md-button>
       </div>
     </div>
   </md-content>
