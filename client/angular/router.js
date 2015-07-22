@@ -24,6 +24,30 @@ angular.module('devStop')
               return 'Explore devStop'
             }
           }
+        })
+        .state('technologies', {
+          url: '/technologies',
+          templateUrl: 'client/angular/technologies/views/technology-list.ng.html',
+          controller: 'TechListController',
+          resolve: {
+            $title: function() {
+              return 'Technology List'
+            }
+          }
+        })
+        .state('technologyDetails', {
+          url: '/technologies/:technologyId',
+          templateUrl: 'client/angular/technologies/views/technology-details.ng.html',
+          controller: 'TechDetailsController',
+          resolve: {
+            $title: ['$meteor', '$stateParams',
+              function($meteor, $stateParams) {
+                // return tech by id and set name as title
+                return $meteor.object(Technologies, $stateParams.technologyId)
+                  .name;
+              }
+            ]
+          }
         });
 
       $urlRouterProvider.otherwise('/');
